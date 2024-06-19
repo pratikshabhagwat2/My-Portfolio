@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: linear-gradient(to right, rgba(185, 113, 240, 0.95), rgba(234, 69, 253, 0.95));
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); 
+    /* width: 434px; */
+    font-family: "Fira Sans", sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+   /*  height: 100vh;
+    transition: transform 0.3s ease-in; */
+}
+.sidebar nav{
+    display: flex ;
+    flex-direction: row;
+    margin-left: 45%;
+    /* padding: 65px; */
+}
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 22px;
+    /* padding: 33px 0; */
+    padding: 15px 0px;
+    margin: 10px 25px 10px 25px;
+}
+.sidebar nav li a{
+   /*  display: block;
+    text-align: center; 
+    padding: 14px 17px;*/
+    text-decoration: none; /* It will remove underlines in ancor tag links */
+    color: white;
+}
+.sidebar nav li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+/* .main{
+    /* background-color: yellow; 
+    width: 90vw;
+    padding: 25px;
+} */
+.container{
+    display: flex; /* To make content side by side */
+    background: linear-gradient(to right, rgb(191 109 241), rgba(255, 118, 234, 0.95));
+    padding: 10rem 0 0 0;
+    box-sizing: border-box;
+}
+#home{
+    /* background-color: pink; */
+    height: 79vh;
+    width: 80vw;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.devinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     /* font-family: "Roboto Mono", monospace; */
+    font-family: "Playfair Display", serif;
+    font-size: 0.7em;
+    color: white;
+    margin-right: 135px;
+}
+.hello{
+    font-size: 3.5em;
+}
+.name{
+    text-shadow: 2px 2px black;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+.aboutme{
+    font-size: 2.3em;
+}
+.moreabout{
+    font-size: 1.8em;
+    margin-top: 23px;
+}
+.buttons{
+    margin-top: 2em;
+    font-size: 16px;
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: black;
+    background-color: white;
+    font-size: 21px;
+    font-weight: bold;
+    /* margin: 3px 3 px; */
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 3px 3px 8px black;
+}
+.buttons button:hover{
+    background-color: black;
+    color: white;
+}
+.devpic img{
+    width: 550px;
+    height: 70vh;
+    /* display: none; */
+}
+/* .sidebarGo{
+    
+    transform: translate(-435px, 0px);
+    position: absolute;
+} */
+/* .hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+} */
+/* .cross{
+    margin-left: 150px;
+} */
+@media(max-width: 1350px){
+   /*  *{background-color: rgb(232, 181, 181);} */
+    /* .sidebar{
+        transform: translate(-435px, 0px);
+        position: absolute;
+    } */
+    /* .buttons button{
+        font-size: 10px;
+    } */}
+
+/* About Section */
+#about{
+   /*  background: linear-gradient(to right, rgb(255 207 207), rgb(209, 142, 250)); */
+    height: 68vh;
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    /* margin: 0px 70px 0px 70px;
+    padding: 20px 100px 20px 100px; */
+}
+.about-text{
+    /* height: 10vh; */
+    width: 50vw;
+    margin: 90px 100px 30px 20px;
+    padding: 20px 20px 20px 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.3em;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Playfair Display", serif; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+}
+.about-text h1, .education-text h1, #skills h1, #certifications h1, #projects h1{
+    text-shadow: 2px 2px rgb(204, 113, 196);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-size: 50px; */
+}
+/* .about-text p{ 
+    background-color: #e9d7ff;
+    border: 2px solid violet;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px violet; 
+    padding: 15px 15px;
+} */
+.about-img img {
+    width: 400px;
+    height: 47vh;
+    margin: 80px 20px 80px 200px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196); 
+    border-radius: 170px;
+}
+#education{
+    /* background: linear-gradient(to right, rgb(255 207 207), rgb(209, 142, 250)); */
+    height: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    /* margin: 0px 70px 0px 70px;
+    padding: 20px 100px 20px 100px; */
+}
+.education-text{
+    height: 70vh;
+    width: 45vw;
+    margin: 10px 0px 10px 0px;
+    padding: 30px 20px 30px 20px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.3em;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Playfair Display", serif; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+}
+ .education-img img {
+    width: 400px;
+    height: 53vh;
+    margin: 120px 0px 20px 0px;
+    border-radius: 20px;
+    border: 2px solid rgb(250, 200, 250);
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196); 
+    
+} 
+.be, .hsc, .ssc, .about-text p{
+    width: 85%;
+    background-color: rgb(255, 215, 254);
+    padding: 15px 15px;
+    border: 2px solid rgb(204, 113, 196);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196);
+    transition: transform .5s;
+    cursor: pointer;
+}
+.be:hover, .hsc:hover, .ssc:hover{
+    background-color: rgb(251, 121, 251);
+    /* color: white; */
+    transform: scale(1.05);
+}
+#skills{
+    display: flex;
+    /* background: linear-gradient(to right, rgb(255 207 207), rgb(209, 142, 250)); */
+}
+.skills-img img{
+    width: 550px;
+    height: 70vh;
+    margin: 70px 90px 50px 180px;
+/*     border-radius: 15px;
+    border: 2px solid rgb(157, 155, 157);*/
+    /* box-shadow: 5px 5px 10px 1px rgb(157, 155, 157); */
+}
+.skills-head{
+    margin: 20px 0px 20px 30px;
+}
+.skills-text{
+   width: 450px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.3em;
+    margin: 20px -20px 20px -50px;
+}
+.java{
+    width: 50px;
+    margin: 10px 20px 20px 40px;
+    padding: 10px 10px;
+    border: 2px solid rgb(204, 113, 196);
+    border-radius: 15px;
+    background-color: rgb(255, 215, 254);
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196);
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s;
+    cursor: pointer;
+}
+.java:hover{
+    background-color: rgb(251, 121, 251);
+    color: white;
+    transform: scale(1.08);
+}
+.skills-text2{
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.3em;
+    width: 450px;
+    margin: 110px 20px 20px -140px;
+}
+.skills-head h1{
+    margin-left: 220px;
+}
+#certifications, #projects{
+    display: block;
+    font-family: "Fira Sans", sans-serif;
+}
+.cer-heading h1, .pro-heading h1 {
+    font-size: 2.4em;
+    text-align: center;
+    margin-left: 240px;
+    margin-right: 240px;
+    /* background-color: #ecdefd;
+    border-radius: 10px; */
+}
+.certificates{
+    margin: 20px 200px 20px 200px;
+    /* margin-left: 500px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.project_s{
+    margin-left: 230px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-1, .project-2{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    /* max-width: 55%; */
+    position: relative;   
+    margin-right: 70px;
+}
+/* .certificate-1 img, .certificate-2 img{
+    transition: transform .5s;
+    height: 230px;
+    width: 440px;
+    margin: 30px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px #9393cc;
+} */
+.certificate-1:hover, .certificate-2:hover, .project-1 img:hover, .project-2 img:hover, .about-text p:hover,.logos :hover{
+    transform: scale(1.1); 
+}
+  .certificate-1, .certificate-2{ 
+    cursor: pointer;
+    margin-right: 160px;
+    margin-left: 40px;
+    margin-top: 70px;
+    padding: 10px; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 215, 254);
+    border: 2px solid rgb(204, 113, 196);
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196);
+    font-style: italic;
+}
+.cer_img img{
+    
+    height: 350px;
+    width: 450px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    /* margin: 30px 20px 10px 27px; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196);
+}
+.cer-heading h1{
+    margin-top: 40px;
+    margin-bottom: -50px;
+    margin-left: 400px;
+    text-align: left;
+}
+.project-1 h3, .project-2 h3{
+    /* background-color: #5ea2c5bf; */
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    border-radius: 5px;
+    margin: 10px 60px 10px 60px;
+}
+.project_s img{
+    height: 200px ;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px rgb(204, 113, 196);
+    margin-top: 20px
+}
+.pro-heading h1{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 260px ;
+}
+.project_s{
+    margin-bottom: 30px;
+}
+/* .desc-1{
+  font-size: 20px;
+  position: absolute;
+  text-align: justify;
+} */
+footer{
+    height: 25vh;
+    background: #db77ff;
+    padding: 50px 50px;
+    margin-top: 90px;
+}
+footer h1, footer h3{
+    /* color: white; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logos{
+    margin-left: 600px;
+}
+.logos img{
+    box-shadow: 5px 5px 15px 1px rgb(10, 10, 10);
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
